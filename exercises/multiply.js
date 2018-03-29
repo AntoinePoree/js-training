@@ -9,7 +9,23 @@
  */
 
 // Your code :
-
+function multiply(x, y) {
+    let result = 0;
+    if (y >= 0) {
+      for (let i = 0; i < y; i++) {
+        result += x;
+      }
+    } else if (x >= 0) {
+      for (let i = 0; i < x; i++) {
+        result += y;
+      }
+    } else {
+      for (let i = 0; i < Math.abs(x); i++) {
+        result += Math.abs(y);
+      }
+    }
+    return result;
+  }
 //* Begin of tests
 const assert = require('assert')
 
