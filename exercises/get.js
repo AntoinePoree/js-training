@@ -8,7 +8,7 @@
  */
 
 // Provided code :
-const sourceObject = {
+const getsourceObject = {
   num: 42,
   bool: true,
   str: 'some text',
@@ -16,7 +16,9 @@ const sourceObject = {
 }
 
 // Your code :
-
+function get(x){
+  return getsourceObject[x];
+}
 //* Begin of tests
 const assert = require('assert')
 
